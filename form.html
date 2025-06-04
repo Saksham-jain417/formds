@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Candidate Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Candidate Registration</h2>
+        <form>
+            <!-- Name Section -->
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required />
+            </div>
+
+            <!-- Contact Info -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="example@domain.com" required />
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required />
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn:</label>
+                    <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourname" />
+                </div>
+                <div class="form-group">
+                    <label for="portfolio">Portfolio:</label>
+                    <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com" />
+                </div>
+                <div class="form-group">
+                    <label for="github">GitHub:</label>
+                    <input type="url" id="github" name="github" placeholder="https://github.com/yourusername" />
+                </div>
+            </div>
+
+            <!-- Experience & Skills -->
+            <div class="form-grid">
+                <div class="form-group">
+                    <label for="experience">Years of Experience:</label>
+                    <input type="number" id="experience" name="experience" min="0" placeholder="2" />
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills:</label>
+                    <input type="text" id="skills" name="skills" placeholder="e.g., React, Node.js, C++" />
+                </div>
+            </div>
+
+            <!-- Projects -->
+            <div class="form-group">
+                <label for="projects">Highlight Projects:</label>
+                <textarea id="projects" name="projects" rows="4"
+                    placeholder="Describe your top 2–3 projects"></textarea>
+            </div>
+
+            <!-- Resume Upload -->
+            <div class="form-group">
+                <label for="resume">Upload Resume (PDF):</label>
+                <input type="file" id="resume" name="resume" accept=".pdf" />
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
